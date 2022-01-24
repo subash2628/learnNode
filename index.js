@@ -3,7 +3,8 @@ const app = express()
 //const cors = require('cors')
 const bodyParser = require("body-parser");
 const { v4 } = require('uuid');
-const port = process.env.port || 5000
+const port = process.env.PORT || 5000
+
 //const production  = '';
 //const development = `http://localhost:${port}`;
 //const serverUrl = (process.env.NODE_ENV ? production : development);
