@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
-const cors = require('cors')
+//const cors = require('cors')
 const bodyParser = require("body-parser");
 const { v4 } = require('uuid');
 const port = process.env.port || 5000
-const production  = '';
-const development = `http://localhost:${port}`;
-const serverUrl = (process.env.NODE_ENV ? production : development);
+//const production  = '';
+//const development = `http://localhost:${port}`;
+//const serverUrl = (process.env.NODE_ENV ? production : development);
 
 
 
@@ -84,7 +84,7 @@ app.post('/task/add',(req,res)=>{
 })
 
 
-// app.listen(port, () => {
-//     //console.log(v4())
-//   console.log(`server started on port ${port}`)
-// })
+app.listen(port, () => {
+    //console.log(v4())
+  //console.log(`server started on port ${port}`)
+})
